@@ -1,0 +1,8 @@
+
+COMANDOS DO TERMINAL :
+
+nasm -f bin bootloader.asm -o bootloader.bin // transformar .asm em .bin
+
+qemu-system-x86_64 -drive format=raw,file=bootloader.bin // roda o .bin em uma máquina virtual no QeMU.
+
+Atende para o "format=raw".
